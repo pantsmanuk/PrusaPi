@@ -11,7 +11,7 @@ axes:
   z:
     inverted: false
     speed: 720
-colour: default
+color: default
 extruder:
   count: 1
   nozzleDiameter: 0.4
@@ -20,13 +20,13 @@ extruder:
     - 0.0
   sharedNozzle: false
 heatedBed: true
-id: prusa
+id: _default
 name: Prusa i3 MK3
 model: Prusa i3 MK3
 volume:
   custom_box: false
   formFactor: rectangular
-  origin: lowerLeft
+  origin: lowerleft
   width: 250.0
   height: 210.0
   depth: 210.0
