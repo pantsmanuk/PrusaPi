@@ -1,0 +1,29 @@
+#!/usr/bin/env bash
+### Bullhugs Boilerplate 2018 [tm]
+set -x
+set -e
+
+export LC_ALL=C
+
+source /common.sh
+
+### Ensure the printerProfiles dir exists
+### Unpack updated configuration
+mkdir -p /home/pi/.octoprint/printerProfiles
+unpack /filesystem/home/pi /home/pi pi
+
+### Install IP on Connect plugin
+sudo -u pi /home/pi/oprint/bin/pip install https://github.com/jneilliii/OctoPrint-ipOnConnect/archive/master.zip
+
+###
+# Prusa i3 Mk3 Einsy Pi Zero boot config changes (as root)
+echo "# Swap ports used by the GPIO (soldered pins) and the internal Bluetooth chip." >> /boot/config.txt
+echo "dtoverlay=pi3-miniuart-bt" >> /boot/config.txt
+
+# Hostname change (because why not)
+echo "prusapi" >> /boot/octopi-hostname.txt
+
+# Disable serial console
+mv /boot/cmdline.txt /boot/cmdline.txt.dist
+sed 's/ console=serial0,115200//' < /boot/cmdline.txt.dist > /boot/cmdline.txt
+rm -rf /boot/cmdline.txt.dist
