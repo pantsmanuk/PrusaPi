@@ -1,5 +1,0 @@
-# variant example, flavor default: override hostname & custom config setting
-
-# Hostname override via /boot/octopi-hostname.txt
-# Pi password override via /boot/octopi-password.txt
-# Can the version number be changed from here?
