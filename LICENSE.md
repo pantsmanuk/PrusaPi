@@ -1,7 +1,6 @@
-#BSD 3-clause License#
+**BSD 3-clause License**
 
 **Copyright (c) 2018, Murray Crane**
-
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without 
