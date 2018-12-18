@@ -22,22 +22,22 @@ server:
 temperature:
   profiles:
   - bed: 100
-    extruder: '255'
+    extruder: 255
     name: ABS
   - bed: 60
-    extruder: '215'
+    extruder: 215
     name: PLA
   - bed: 100
-    extruder: '220'
+    extruder: 220
     name: HIPS
   - bed: 100
-    extruder: '254'
+    extruder: 254
     name: PP
   - bed: 85
-    extruder: '230'
+    extruder: 230
     name: PET
   - bed: 50
-    extruder: '240'
+    extruder: 240
     name: FLEX
 printerProfiles:
   default: _default
