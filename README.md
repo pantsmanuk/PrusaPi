@@ -1,6 +1,6 @@
 # PrusaPi
 
-A [guysoft/CustomPiOS](https://github.com/guysoft/CustomPiOS) variant package that permits building [OctoPi](https://github.com/guysoft/OctoPi) with the changes from the [Prusa3D OctoPi fork](https://github.com/prusa3d/OctoPi): 
+A [CustomPiOS](https://github.com/guysoft/CustomPiOS) variant package that permits building [OctoPi](https://github.com/guysoft/OctoPi) with the changes from the [Prusa3D OctoPi fork](https://github.com/prusa3d/OctoPi): 
 
 * black theme and OctoPrint name change
 * IPOnConnect plugin pre-installed
