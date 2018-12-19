@@ -1,5 +1,9 @@
-# variant example, flavor default: override hostname & custom config setting
+###
+# Version number override via ../../OctoPi/src/config.local
 
-# Hostname override via /boot/octopi-hostname.txt
-# Pi password override via /boot/octopi-password.txt
-# Can the version number be changed from here?
+if [ -f ../../OctoPi/src/config.local ]; then
+    rm -rf ../../OctoPi/src/config.local
+fi
+
+echo '# Override DIST_VERION to include "PE" (Prusa Edition)' > ../../OctoPi/src/config.local
+echo 'export DIST_VERSION+="PE"' >> ../../OctoPi/src/config.local
